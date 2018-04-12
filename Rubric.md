@@ -5,6 +5,8 @@
 
 ## The Model
 * The state of the car is denoted by the x (x position), y (y position), v (velocity) , psi (orientation), cte (Cross Treck Error), eps (orientation error). The actuators are what the model uses to control the car. The actuators are the steering angle and the acceleration. We constrain the values to -1 to 1 acceleration and -25 to 25 degrees. The update equations are calculated by the following equations.
+
+
     ![update function](update.jpeg)
 
 ## Timestep Length and Elapsed Duration (N & dt)
