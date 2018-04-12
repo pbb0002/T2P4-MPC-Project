@@ -5,7 +5,7 @@
 
 ## The Model
 * The state of the car is denoted by the x (x position), y (y position), v (velocity) , psi (orientation), cte (Cross Treck Error), eps (orientation error). The actuators are what the model uses to control the car. The actuators are the steering angle and the acceleration. We constrain the values to -1 to 1 acceleration and -25 to 25 degrees. The update equations are calculated by the following equations.
-    ![update function] (update.jpeg)
+    ![update function](update.jpeg)
 
 ## Timestep Length and Elapsed Duration (N & dt)
 * I started with the timestep length and elapsed times originally to the 25 timestep lengths and .05 elapsed time. I tweeked the values and found I had better latency results with N = 10 and dt = .1. The smaller the elapsed time the more precise the model is, but the slower the latency. The larger the timestep the more future predictions we make. This will cost more memory and computation power.
